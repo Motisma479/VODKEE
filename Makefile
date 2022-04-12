@@ -1,11 +1,11 @@
 
-PROGRAM=Undertale
+PROGRAM=Vodkee
 
 # Add your objs to generate in OBJS var
 
 SD = ./src/
 
-OBJS=$(SD)main.o $(SD)draw.o $(SD)loader.o $(SD)utils.o #add an objs for each .cpp file
+OBJS=$(SD)main.o $(SD)draw.o $(SD)loader.o $(SD)common.o $(SD)ui.o#add an objs for each .cpp file
 
 CXX?=g++
 TARGET?=$(shell $(CXX) -dumpmachine)
@@ -18,7 +18,7 @@ LDLIBS=-lraylib
 
 ifeq ($(TARGET),x86_64-linux-gnu)
 LDLIBS+=-ldl -lpthread -lm
-else ifeq ($(TARGET),x86_64-w64-mingw32)#else ifeq ($(TARGET),x86_64-pc-cygwin)
+else ifeq ($(TARGET),x86_64-pc-cygwin)
 LDLIBS+=-lgdi32 -lWinmm -lWs2_32
 else ifeq ($(TARGET),wasm32-unknown-emscripten)
 OPTIM_FLAGS=-Os

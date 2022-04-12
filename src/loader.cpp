@@ -1,7 +1,7 @@
 #include "loader.hpp"
 #include <assert.h>
 
-void fileManagement::readAllFile(const char* dialogue, const char* save, common::Game &game){
+void readAllFile(const char* dialogue, const char* save, Game &game){
 
     //load file
     FILE* conv = fopen(dialogue, "r");

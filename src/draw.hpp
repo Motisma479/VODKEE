@@ -1,8 +1,6 @@
 #include "common.hpp"
 
-namespace draw{
-    // Update The Game
-    void updateGame(common::Game &game);
-    // Draw The Game
-    void drawGame(common::Game &game);
-}
+// Update The Game
+void updateGame(Game &game);
+// Draw The Game
+void drawGame(Game &game);
