@@ -6,20 +6,20 @@ int main()
 {
     SetConfigFlags(FLAG_VSYNC_HINT);
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, GAME_NAME);
-    common::Game game;
-    game.storedDialogue = new common::dialogue[1024]; //nombre de ligne de text a stocker
+    Game game;
+    game.storedDialogue = new dialogue[1024]; //nombre de ligne de text a stocker
 
     game.gameState=0;
-    game.showDebug = false;
+    game.showDebug = true;
 
-    fileManagement::readAllFile((const char*)"dialogue.txt",(const char*)"save.txt", game);
+    readAllFile((const char*)"dialogue.txt",(const char*)"save.txt", game);
 
     SetTargetFPS(60);
 
     while (!WindowShouldClose())
     {
-        draw::updateGame(game);
-        draw::drawGame(game);
+        updateGame(game);
+        drawGame(game);
         /* printf("UNF");
         BeginDrawing();
         ClearBackground(RED);

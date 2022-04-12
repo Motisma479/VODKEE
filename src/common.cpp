@@ -1,7 +1,7 @@
 #include "common.hpp"
 #include "dataName.hpp"
 
-common::Game::Game(){
+Game::Game(){
     //Load your texture here.
     for (size_t i = 0; i < TEXTURE_COUNT; i++)
     {
@@ -19,8 +19,8 @@ common::Game::Game(){
         GameFont.emplace_back(f1);
     }
 }
-common::Game::~Game(){}
-void common::Game::clearData(){
+Game::~Game(){}
+void Game::clearData(){
     //unload textures
     for (size_t i = 0; i < GameTexture.size(); i++)
     {
@@ -35,9 +35,9 @@ void common::Game::clearData(){
         delete GameFont[i];
     }
 }
-Texture2D common::Game::getTextureById(int Id){
+Texture2D Game::getTextureById(int Id){
     return *GameTexture[Id];
 }
-Font common::Game::getFontById(int Id){
+Font Game::getFontById(int Id){
     return *GameFont[Id];
 }
