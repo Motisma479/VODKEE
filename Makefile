@@ -19,15 +19,13 @@ LDLIBS=-lraylib
 ifeq ($(TARGET),x86_64-linux-gnu)
 LDLIBS+=-ldl -lpthread -lm
 else ifeq ($(TARGET),x86_64-pc-cygwin)
-LDLIBS+=-lgdi32 -lWinmm -lWs2_32
+LDLIBS+=-lgdi32 -lWinmm -lWs2_32 -mwindows
 else ifeq ($(TARGET),wasm32-unknown-emscripten)
 OPTIM_FLAGS=-Os
 LDFLAGS+=-s ASYNCIFY
 LDFLAGS+=-s USE_GLFW=3
 LDFLAGS+=--preload-file assets
 EXT=.html
-else ifeq ($(TARGET),x86_64-w64-mingw32)
-LDLIBS+=-lgdi32 -lwinmm
 endif
 
 DEPS=$(OBJS:.o=.d)
