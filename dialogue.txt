@@ -1,0 +1,16 @@
+<p2><f,0><i,"Xavier">Bienvenue chez linkee, je me nomme Xavier.<ln>Comme il ne s'agit que d'une démo je vais te<ln>présenter à l'un de nos bénévoles afin que tu<ln>accomplisses une mission.
+La démo est très courte et ne sert qu'à<ln>montrer notre idée. ce prototype ayant dû<ln>être fait sur un temps très court, regorge<ln>donc de bug pouvant faire planter le jeu.<ln>En allant doucement vous éviter<ln>certains problèmes
+<p1>Voici Alexis  il t'aidera pour ta mission.<ln>Alexis je compte sur toi pour prendre<ln>soin de notre nouvelle recrue.
+<f,0><i,"Alexis">Aucun problème monsieur.<ln>Des missions sont disponibles?.
+<i,"Xavier">Actuellement deux missions sont disponibles<ln>vous pouvez aller dans une épicerie ou<ln>dans une boulangerie.<ln>Lesquels des deux vous préfèreriez?
+<i,"Alexis"><b,6,"boulangerie",10,"épicerie">Je vais laisser notre nouvelle recrue choisir.
+Très bien dans ce cas parton tout de suite.
+<!p2><f,1>Nous sommes arrivé laisse-moi te présenter<ln>aux personnes que l'on va aider.
+<p3><i,"???    ">Êtes-vous L'association venue nous aider?
+<!p1><!p3><p2><i,"Xavier"><b,0,"Recommencer",14,"Arrêter">On dirait bien que tu viens d'arriver que bout<ln>de cette démo, n'hésite pas<ln>à soutenir le projet si tu veux la suite.
+Très bien dans ce cas parton tout de suite.
+<!p2><f,2>Nous sommes arrivé laisse-moi te présenter<ln>aux personnes que l'on va aider.
+<p3><i,"???    ">Êtes-vous L'association venue nous aider?
+<!p1><!p3><p2><i,"Xavier"><b,0,"Recommencer",14,"Arrêter">On dirait bien que tu viens d'arriver que bout<ln>de cette démo, n'hésite pas<ln>à soutenir le projet si tu veux la suite.
+Merci d'avoir joué en espèrent que notre idée<ln>vous ait plu.
+<0>
