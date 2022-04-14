@@ -26,6 +26,8 @@ LDFLAGS+=-s ASYNCIFY
 LDFLAGS+=-s USE_GLFW=3
 LDFLAGS+=--preload-file assets
 EXT=.html
+else ifeq ($(TARGET),x86_64-w64-mingw32)
+LDLIBS+=-lgdi32 -lwinmm
 endif
 
 DEPS=$(OBJS:.o=.d)
